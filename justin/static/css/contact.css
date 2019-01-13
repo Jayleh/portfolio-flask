@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Roboto|Lato');
+
+html {
+  height: 100%;
+}
+
+h3,
+h4,
+.brand-logo,
+#msg-form label,
+footer h5,
+.code-link,
+.code-link a {
+  font-family: 'Amaranth', Calibri, Arial, sans-serif;
+}
+
+.code-link a {
+  color: #00738c;
+  font-weight: 700;
+}
+
+.code-link {
+  font-size: 14px;
+}
+
+p,
+a,
+li {
+  font-family: 'Roboto', Calibri, Arial, sans-serif;
+}
+
+nav {
+  background-color: #607d8b !important;
+  /* box-shadow: 0 0 0 0; */
+}
+
+.nav-links li a {
+  font-family: 'Lato', Calibri, Arial, san-serif;
+  letter-spacing: 1px;
+}
+
+.social-media i,
+.scroll-top i {
+  font-size: 24px;
+}
+
+.split {
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.split .col {
+  line-height: 1.5;
+}
+
+#msg-container,
+#contact-container {
+  margin: 30px 0;
+}
+
+.msg-row {
+  margin-bottom: 10px;
+}
+
+.msg-row,
+.contact-row {
+  padding: 0 15px;
+}
+
+.image-container {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.image-container img {
+  margin: 0 0 -5.5px 0;
+  width: 100%;
+}
+
+#msg-form > div:nth-child(n + 6) > div {
+  margin: 1rem 0;
+}
+
+#msg-form .row {
+  margin-bottom: 0;
+}
+
+#msg-form label {
+  font-size: 14px;
+}
+
+.heading h3 {
+  font-size: 28px;
+}
+
+.contact-row h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #9a9a9a;
+}
+
+#submit {
+  color: #fff;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background-color: rgba(0, 115, 140, 1) !important;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: rgba(0, 115, 140, 0.8) !important;
+}
+
+.footer-copyright-content div.row {
+  margin: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) {
+  .msg-row,
+  .contact-row {
+    padding: 0 15%;
+  }
+
+  .heading h3 {
+    font-size: 30px;
+  }
+
+  .contact-row h4 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .code-link {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #msg-form label {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .msg-row,
+  .contact-row {
+    padding: 0 25%;
+  }
+
+  .heading h3 {
+    font-size: 32px;
+  }
+
+  .contact-row h4 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  #right-img {
+    margin: 0 0 -5.5px -68%;
+    width: 240%;
+  }
+
+  #left-img {
+    margin: 0 0 -5.5px -25%;
+    width: 150%;
+  }
+
+  #contact-container {
+    margin-top: 50px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .heading h3 {
+    font-size: 34px;
+  }
+
+  .contact-row h4 {
+    font-size: 26px;
+  }
+
+  #msg-container,
+  #contact-container {
+    margin-top: 80px;
+  }
+
+  #right-img {
+    margin: 0 0 -5.5px -68%;
+    width: 220%;
+  }
+}

@@ -1,0 +1,141 @@
+{% extends "layout.html" %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/main.css') }}">
+{% endblock styles %}
+{% block nav_items %}
+<li>
+  <a href="{{ url_for('about') }}">About</a>
+</li>
+<li>
+  <a href="{{ url_for('projects') }}">Projects</a>
+</li>
+<li>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</li>
+{% endblock nav_items %}
+{% block collapse_items %}
+<li>
+  <a href="{{ url_for('about') }}">About</a>
+</li>
+<li>
+  <a href="{{ url_for('projects') }}">Projects</a>
+</li>
+<li>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</li>
+{% endblock collapse_items %}
+{% block home_header %}
+<div class="parallax-box valign-wrapper">
+  <div id="impression" class="container valign-wrapper center-align">
+    <div class="intro center-align">
+      <h2>I'm Justin,</h2>
+      <p>a developer!</p>
+    </div>
+    <div id="visual">
+      <div id="collision" class="center-align"></div>
+    </div>
+  </div>
+</div>
+{% endblock home_header %}
+{% block main %}
+<section id="hello">
+  <div class="container center-align">
+    <div class="row">
+      <div class="col s12">
+        <article>
+          <img src="{{ url_for('static', filename='img/portrait.jpg') }}" class="circle responsive-img">
+          <h3>Hi.</h3>
+          <p class="flow-text">I'm a developer / data analyst based in Irvine, California. I have a passion for
+            building full stack web applications and a goal to always be learning.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="breaker">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="what-i-do">
+  <div class="container center-align">
+    <div class="row">
+      <div class="col s12">
+        <article>
+          <div class="row">
+            <div class="col s12">
+              <div class="heading">
+                <h3>What I can do.</h3>
+              </div>
+            </div>
+          </div>
+          <div id="data" class="row">
+            <div class="col s12 l5">
+              <div class="chart-container">
+                <canvas id="bubble-chart"></canvas>
+              </div>
+            </div>
+            <div class="col s12 l7">
+              <div class="details">
+                <h4>Straight up creation.</h4>
+                <p class="flow-text">From ideation to deployment, my goals are to focus on building intuitive content
+                  that streamlines processes.</p>
+              </div>
+            </div>
+          </div>
+          <div id="grow" class="row">
+            <div class="col s12 l5 push-l7">
+              <div class="chart-container">
+                <canvas id="bar-chart"></canvas>
+              </div>
+            </div>
+            <div class="col s12 l7 pull-l5">
+              <div class="details">
+                <h4>Grow with you.</h4>
+                <p class="flow-text">I'm a full-stack developer with a side in data analytics. I'm
+                  driven to learn and adapt as technology changes.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="breaker">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="i-can-help">
+  <div class="container center-align">
+    <div class="row">
+      <div class="col s12">
+        <article>
+          <div class="heading">
+            <h3>I can help.</h3>
+            <h4>I'm currently on the job market.</h4>
+          </div>
+          <p class="flow-text">Looking to build robust applications with a fast-paced company.</p>
+          <a class="waves-effect waves-light btn-large" href="mailto:jaylehyun@gmail.com">
+            <i class="material-icons left">mail</i>EMAIL ME</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock main %}
+{% block scripts %}
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/collide.js') }}"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock scripts %}

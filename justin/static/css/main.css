@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Roboto|Lato');
+
+@font-face {
+  src: url('../fonts/Luna.ttf');
+  font-family: 'Luna';
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Amaranth', Calibri, Arial, sans-serif;
+}
+
+a,
+li,
+p {
+  font-family: 'Roboto', Calibri, Arial, sans-serif;
+}
+
+p {
+  color: #424242;
+}
+
+.brand-logo,
+.code-link a {
+  font-family: 'Amaranth', Calibri, Arial, sans-serif;
+}
+
+.code-link a {
+  color: #00738c;
+  font-weight: 700;
+}
+
+.code-link {
+  font-size: 14px;
+}
+
+h3 {
+  /* color: #607d8b; */
+  color: #00738c;
+}
+
+h4 {
+  /* color: #90a4ae; */
+  color: #81b0b2;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background-color: rgba(0, 115, 140, 1) !important;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: rgba(0, 115, 140, 0.8) !important;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+nav {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 0;
+}
+
+.nav-wrapper a {
+  color: #b0bec5;
+}
+
+.nav-links li a {
+  font-family: 'Lato', Calibri, Arial, san-serif;
+  letter-spacing: 1px;
+}
+
+.nav-wrapper {
+  z-index: 1;
+}
+
+.parallax-box {
+  position: relative;
+  height: 100vh;
+  background-image: url('../img/wallpaper/reduced/pexels-photo-509922-min.jpeg');
+  background-size: cover;
+  background-position: top center;
+  /* background-attachment: fixed; */
+  transform: translateY(-64px);
+}
+
+#impression {
+  display: block !important;
+}
+
+#impression h2,
+#impression p {
+  font-family: 'Luna';
+  color: black;
+  /* letter-spacing: 0.2em; */
+  margin: 0;
+  padding: 1rem 0;
+}
+
+#impression h2 {
+  font-size: 3rem;
+  padding: 2rem 0;
+}
+
+#impression p {
+  font-size: 1rem;
+}
+
+.intro {
+  margin: 2rem 0;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+}
+
+#hello,
+#i-can-help {
+  margin-bottom: 3rem;
+}
+
+#hello article,
+#i-can-help article {
+  margin: 0 auto;
+  max-width: 460px;
+}
+
+#i-can-help article h4 {
+  padding-top: 2rem;
+}
+
+#i-can-help article p {
+  margin-top: 0;
+}
+
+.heading {
+  padding: 2rem 0;
+}
+
+.details {
+  padding: 2rem 0;
+}
+
+/* Visual containers */
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* line break image */
+.breaker {
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.breaker .line {
+  background-image: url('../img/ui/line-bg.png');
+  height: 6px;
+  width: 100%;
+}
+
+.social-media i,
+.scroll-top i {
+  font-size: 24px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 1.5),
+  (min-resolution: 1.5dppx) {
+  .breaker .line {
+    background-image: url('../img/ui/line-bg@2x.png');
+    background-size: auto 6px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) {
+  #impression {
+    width: 90%;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .chart-container {
+    width: 70%;
+  }
+
+  .code-link {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #impression {
+    width: 70%;
+  }
+
+  #impression h2 {
+    font-size: 3.2rem;
+    padding: 3rem 0;
+  }
+
+  #impression p {
+    font-size: 1.2rem;
+  }
+
+  #impression {
+    display: block !important;
+    justify-content: unset !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #impression h2 {
+    font-size: 3.2rem;
+    padding: 3rem 0;
+  }
+
+  #impression p {
+    font-size: 1.2rem;
+  }
+
+  #data,
+  #grow {
+    display: flex;
+    align-items: center;
+    padding: 0 75px;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+
+  .details {
+    padding: 0;
+    text-align: left;
+  }
+
+  #data .details {
+    padding-left: 35px;
+  }
+
+  #grow .details {
+    padding-right: 20px;
+  }
+
+  #grow {
+    margin: 3rem 0;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Amaranth|Roboto|Lato');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+p,
+a,
+li {
+  font-family: 'Roboto', Calibri, Arial, sans-serif;
+}
+
+.brand-logo,
+#projects-title h3,
+footer h5,
+.code-link,
+.code-link a {
+  font-family: 'Amaranth', Calibri, Arial, sans-serif;
+}
+
+.code-link a {
+  color: #00738c;
+  font-weight: 700;
+}
+
+.code-link {
+  font-size: 14px;
+}
+
+#projects-title h3 {
+  color: #161618;
+  font-size: 28px;
+}
+
+nav {
+  background-color: #607d8b !important;
+}
+
+.nav-links li a {
+  font-family: 'Lato', Calibri, Arial, san-serif;
+  letter-spacing: 1px;
+}
+
+figcaption p {
+  font-size: 11px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+figcaption a {
+  color: #888;
+  text-decoration: none;
+}
+
+/* figcaption a:hover,
+figcaption a:active {
+	color: #333;
+} */
+
+figcaption {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+
+figcaption p span {
+  color: gray;
+}
+
+.action-links {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.fa-github {
+  color: white;
+  font-size: 30px;
+}
+
+.btn,
+.btn-large,
+.btn-small {
+  background-color: rgba(0, 115, 140, 1) !important;
+}
+
+.btn-small {
+  font-size: 11px;
+  padding: 0 6px;
+}
+
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover {
+  background-color: rgba(0, 115, 140, 0.8) !important;
+}
+
+#projects-title {
+  padding: 10px 0;
+}
+
+#github-btn {
+  padding: 20px 0;
+}
+
+.social-media i,
+.scroll-top i {
+  font-size: 24px;
+}
+
+.footer-copyright-content div.row {
+  margin: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 600px) {
+  #projects-title h3 {
+    font-size: 30px;
+  }
+
+  figcaption p {
+    font-size: 14px;
+    -webkit-line-clamp: 8;
+  }
+
+  .btn-small {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+
+  #github-btn {
+    padding: 30px 0;
+  }
+
+  .code-link {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #projects-title {
+    padding: 15px 0;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #projects-title h3 {
+    font-size: 32px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #projects-title h3 {
+    font-size: 34px;
+  }
+
+  figcaption p {
+    -webkit-line-clamp: 7;
+  }
+}

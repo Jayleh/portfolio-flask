@@ -1,0 +1,278 @@
+{% extends "layout.html" %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/jquery-jvectormap-2.0.3.css') }}">
+<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/about.css') }}">
+{% endblock styles %}
+{% block nav_items %}
+<li class="active">
+  <a href="{{ url_for('about') }}">About</a>
+</li>
+<li>
+  <a href="{{ url_for('projects') }}">Projects</a>
+</li>
+<li>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</li>
+{% endblock nav_items %}
+{% block collapse_items %}
+<li class="active">
+  <a href="{{ url_for('about') }}">About</a>
+</li>
+<li>
+  <a href="{{ url_for('projects') }}">Projects</a>
+</li>
+<li>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</li>
+{% endblock collapse_items %}
+{% block main %}
+<div id="about" class="container">
+  <div class="row">
+    <div class="col s12">
+      <h3>About</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12">
+      <p>
+        <span class="text-important">Developer</span>, specializing in operations, sales analytics, and
+        inventory management. Able to <span class="text-important">solve business needs</span> with quick
+        deliverables, while <span class="text-important">constantly improving</span> and moving towards
+        <span class="text-important">long-term goals</span>. Looking to build
+        <span class="text-important">robust applications</span> with a
+        <span class="text-important">fast-paced</span> and growing company.</p>
+    </div>
+  </div>
+</div>
+<div class="breaker">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="experience" class="container">
+  <div class="row">
+    <div class="col s12">
+      <h3>Work Experience</h3>
+    </div>
+  </div>
+  <section>
+    <article>
+      <div class="row">
+        <div class="col s12 l3 experience-time-place">
+          <div class="location">
+            <p>Irvine, CA</p>
+          </div>
+          <div class="date-range">
+            <p>Dec'17 -
+              <span class="color-accent">today</span>
+            </p>
+          </div>
+        </div>
+        <div class="col l9 experience-panel">
+          <div class="experience-image">
+            <img src="{{ url_for('static', filename='img/about-imgs/reduced/turtle-min.jpg') }}" class="circle responsive-img">
+          </div>
+          <div class="position">
+            <h4>Developer &#124; Data Analyst &#124; Inventory Specialist &mdash;
+              <a href="https://anteage.com/" target="_blank" class="color-accent">Cellese</a>
+            </h4>
+          </div>
+          <div class="description">
+            <p>Mix of web development, analytics, and inventory management at Cellese, an ecommerce skin care company
+              in
+              Irvine. Here is where I develop web applications, streamlining data and projection
+              reportings, and identity business trends to make data-driven decisions.
+              <span class="text-important">#BuildWebApps #InventoryRevamp #ProjectionReport #SalesTrends
+                #IdentifyKPIs</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="row">
+        <div class="col s12 l3 experience-time-place">
+          <div class="location">
+            <p>Sangju, South Korea</p>
+          </div>
+          <div class="date-range">
+            <p>Feb'15 - Mar'17</p>
+          </div>
+        </div>
+        <div class="col l9 experience-panel">
+          <div class="experience-image">
+            <img src="{{ url_for('static', filename='img/about-imgs/reduced/moon-min.jpg') }}" class="circle responsive-img">
+          </div>
+          <div class="position">
+            <h4>English Teacher &mdash;
+              <a href="http://www.epik.go.kr/index.do" target="_blank" class="color-accent">EPIK</a>
+            </h4>
+          </div>
+          <div class="description">
+            <p>English Program in Korea to help improve English-speaking abilities in students, develop cultural
+              exchange, and foster and encourage individuals to take advantage of all the things this new age of
+              information and globalization has to offer.
+              <span class="text-important">#WorkAbroad #MakeADifference #Countryside #UnderprivelegedStudents</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+<div class="breaker">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="education" class="container">
+  <div class="row">
+    <div class="col s12">
+      <h3>Education</h3>
+    </div>
+  </div>
+  <section>
+    <article>
+      <div class="row">
+        <div class="col s12 l3 experience-time-place">
+          <div class="location">
+            <p>Everywhere</p>
+          </div>
+          <div class="date-range">
+            <p>
+              <span class="color-accent">Always</span>
+            </p>
+          </div>
+        </div>
+        <div class="col l9">
+          <div class="experience-panel">
+            <div class="experience-image valign-wrapper">
+              <img src="{{ url_for('static', filename='img/about-imgs/reduced/rest-min.jpg') }}" class="circle responsive-img">
+            </div>
+            <div class="position">
+              <h4>Self-learning &mdash; From each job, class, co-worker, book, article, meet-up or life experience</h4>
+            </div>
+            <div class="description">
+              <p>This is how I learned 80% of what I know now.
+                <span class="text-important">#LearnByDoing</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="row">
+        <div class="col s12 l3 experience-time-place">
+          <div class="location">
+            <p>Irvine, CA</p>
+          </div>
+          <div class="date-range">
+            <p>Jan'18 - Jul'18</p>
+          </div>
+        </div>
+        <div class="col l9">
+          <div class="experience-panel">
+            <div class="experience-image valign-wrapper">
+              <img src="{{ url_for('static', filename='img/about-imgs/reduced/pose-min.jpg') }}" class="circle responsive-img">
+            </div>
+            <div class="position valign-wrapper">
+              <h4>Data Analytics &amp; Visualization &mdash;
+                <a href="https://bootcamp.ce.uci.edu/data/" target="_blank" class="color-accent">UCI Division of
+                  Continuing Education</a>
+              </h4>
+            </div>
+            <div class="description">
+              <p>Intensive 24-week data bootcamp dedicated to data mining, preparation, and visualization.
+                <span class="text-important">#WorkStudy #Python #JavaScript #MachineLearning #DataWrangling #Database
+                  #FullStack #WebDevelopment</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article>
+      <div class="row">
+        <div class="col s12 l3 experience-time-place">
+          <div class="location">
+            <p>SLO, CA</p>
+          </div>
+          <div class="date-range">
+            <p>Sep'09 - Jun'13</p>
+          </div>
+        </div>
+        <div class="col l9">
+          <div class="experience-panel">
+            <div class="experience-image valign-wrapper">
+              <img src="{{ url_for('static', filename='img/about-imgs/reduced/cliff-min.jpg') }}" class="circle responsive-img">
+            </div>
+            <div class="position">
+              <h4>Biological Sciences, Bachelor's Degree &mdash;
+                <a href="https://www.calpoly.edu/" target="_blank" class="color-accent">Cal Poly SLO</a>
+              </h4>
+            </div>
+            <div class="description">
+              <p>Experimental data collection, statistical analysis, prediction in research, and psychology.
+                <span class="text-important">#Biology #AskQuestions #Explore</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+<div id="resume-linkedin">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6 xl12">
+        <div class="bootcamp-image valign-wrapper">
+          <img src="{{ url_for('static', filename='img/about-imgs/reduced/bootcamp-min.jpg') }}" class="responsive-img">
+        </div>
+        <div class="bootcamp-image valign-wrapper">
+          <img src="{{ url_for('static', filename='img/about-imgs/reduced/certificate-min.jpg') }}" class="responsive-img">
+        </div>
+      </div>
+      <div class="col s12 m6 xl12">
+        <div class="resume-linkedin-description">
+          <p>If you'd like a formal document please see my
+            <a class="color-accent" href="{{ url_for('static', filename='docs/Justin Le Resume.pdf') }}" target="_blank">resume</a>.
+            You can also checkout my
+            <a class="color-accent" href="https://www.linkedin.com/in/jayleh/" target="_blank">Linkedin</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="where-ive-been" class="container">
+  <div class="row">
+    <div class="col s12">
+      <h3>Where I've Been</h3>
+    </div>
+  </div>
+  <div id="text-word" class="row">
+    <div class="col s12 l2">
+      <p>These are all the countries that I have
+        <span class="color-accent">visited</span> or
+        <span class="text-important">lived</span> in.</p>
+    </div>
+    <div class="col s12 l10 center-align">
+      <div id="map"></div>
+    </div>
+  </div>
+</div>
+{% endblock main %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/jquery-jvectormap-2.0.3.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery-jvectormap-world-mill.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+{% endblock scripts %}

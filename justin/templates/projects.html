@@ -1,0 +1,204 @@
+{% extends "layout.html" %}
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/hover-effects/component.css') }}">
+<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='css/hover-effects/hover.css') }}">
+{% endblock styles %}
+{% block nav_items %}
+<li>
+  <a href="{{ url_for('about') }}">About</a>
+</li>
+<li class="active">
+  <a href="{{ url_for('projects') }}">Projects</a>
+</li>
+<li>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</li>
+{% endblock nav_items %}
+{% block collapse_items %}
+<li>
+  <a href="{{ url_for('about') }}">About</a>
+</li>
+<li class="active">
+  <a href="{{ url_for('projects') }}">Projects</a>
+</li>
+<li>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</li>
+{% endblock collapse_items %}
+{% block main %}
+<div id="projects-title" class="container">
+  <div class="row">
+    <div class="col s12 center-align">
+      <h3>Projects</h3>
+    </div>
+  </div>
+</div>
+<ul class="grid cs-style-4">
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/vid-browser-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>Vid Browser</h4>
+            <p>Browse for the first 5 YouTube videos based on your search! <span>(React, Semantic
+                UI, YouTube Data API v3, JavaScript, HTML5/CSS3)</span></p>
+            <div class="action-links">
+              <a href="https://vid-browser.herokuapp.com" target="_blank" class="waves-effect waves-light btn-small">Take
+                a look</a>
+              <a class="valign-wrapper" href="https://github.com/Jayleh/videos" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/shipstation-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>Ship Live</h4>
+            <p>Shipstation dashboard <span>(Python Flask, SQLite, JavaScript, HTML5/CSS3)</span></p>
+            <div class="action-links">
+              <a href="https://ship-live.herokuapp.com/demo" target="_blank" class="waves-effect waves-light btn-small">Take
+                a look</a>
+              <a class="valign-wrapper" href="https://github.com/Jayleh/shipstation-live" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/nfl-dash-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>NFL Prediction</h4>
+            <p>Machine learning project to predict NFL game outcomes based on historical data <span>(Python Flask,
+                Sci-Kit Learn, JavaScript, HTML/CSS)</span></p>
+            <div class="action-links">
+              <a href="https://nfl-dashboard.herokuapp.com/" target="_blank" class="waves-effect waves-light btn-small">Take
+                a look</a>
+              <a class="valign-wrapper" href="https://github.com/Jayleh/nfl-predict" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/usgs-quake-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>USGS Quake</h4>
+            <p>Earthquake datamap revealing all earthquakes in the past week <span>(Python Flask, Javascript, D3.js,
+                Leaflet.js, HTML/CSS/Bootstrap)</span></p>
+            <div class="action-links">
+              <a href="https://jayleh.github.io/usgs-quake/" target="_blank" class="waves-effect waves-light btn-small">Take
+                a look</a>
+              <a class="valign-wrapper" href="https://github.com/Jayleh/usgs-quake" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/belly-button-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>Belly Button</h4>
+            <p>Interactive dashboard investigating a 2011 study of belly button microbe diversity <span>(Python Flask,
+                SQLite, Javascript, Leaflet.js, HTML/CSS/Bootstrap)</span></p>
+            <div class="action-links">
+              <a href="https://bellybtn.herokuapp.com" target="_blank" class="waves-effect waves-light btn-small">Take
+                a
+                look</a>
+              <a class="valign-wrapper" href="https://github.com/Jayleh/belly-button" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/honey-production-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>Honey Production</h4>
+            <p>Historical honey production data through interactive graphs and maps <span>(Python
+                Flask, Javascript, Leaflet.js, HTML/CSS/Bootstrap)</span></p>
+            <div class="action-links">
+              <a href="https://honeyproduction.herokuapp.com/bubble" target="_blank" class="waves-effect waves-light btn-small">Take
+                a look</a>
+              <a class="valign-wrapper" href="https://github.com/Jayleh/honey-production" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="card">
+      <div class="card-content">
+        <figure>
+          <div>
+            <img src="{{ url_for('static', filename='img/project-card-imgs/reduced/mars-min.PNG') }}" alt="">
+          </div>
+          <figcaption>
+            <h4>Mars Mission</h4>
+            <p>Mars info page <span>(Python Flask, MongoDB, Javascript, HTML/CSS/Bootstrap)</span></p>
+            <div class="action-links">
+              <!-- <a href="javascript:void(0)" target="_blank" class="waves-effect waves-light btn-small">Take a look</a> -->
+              <a class="valign-wrapper" href="https://github.com/Jayleh/mars-mission" target="_blank" style="margin: 0;">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </li>
+</ul>
+<div id="github-btn" class="container center-align">
+  <a class="waves-effect waves-light btn-large" href="https://github.com/Jayleh/" target="_blank">View All Projects</a>
+</div>
+{% endblock main %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/modernizr.custom.js') }}"></script>
+<script src="{{ url_for('static', filename='js/toucheffects.js') }}"></script>
+{% endblock scripts %}
